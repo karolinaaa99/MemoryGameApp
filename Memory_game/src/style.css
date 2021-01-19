@@ -1,0 +1,47 @@
+.label{
+ -fx-text-alignment: center;
+ -fx-font-family: cursive;
+ -fx-font-size: 14pt;
+ -fx-font-style: italic;
+ -fx-font-weight: normal;
+ -fx-text-fill: rgb(0, 0, 0);
+}
+
+.button{
+ -fx-text-alignment: center;
+ -fx-font-family: cursive;
+ -fx-font-size: 14pt;
+ -fx-font-style: italic;
+ -fx-font-weight: normal;
+ -fx-text-fill: rgb(0, 0, 0);
+ -fx-border-style: dotted;
+ -fx-border-width: 3px;
+ -fx-border-color: rgb(171, 128, 219);
+ -fx-background-color: rgb(231, 182, 219);
+}
+
+.text-field{
+ -fx-text-alignment: center;
+ -fx-font-family: cursive;
+ -fx-font-size: 14pt;
+ -fx-font-style: italic;
+ -fx-font-weight: normal;
+ -fx-text-fill: rgb(0, 0, 0);
+ -fx-border-style: solid;
+ -fx-border-width: 3px;
+ -fx-border-color: rgb(0, 0, 0);
+ -fx-background-color: rgb(225, 215, 218);
+}
+
+.check-box{
+ -fx-text-alignment: center;
+ -fx-font-family: cursive;
+ -fx-font-size: 14pt;
+ -fx-font-style: italic;
+ -fx-font-weight: normal;
+ -fx-text-fill: rgb(0, 0, 0);
+ -fx-border-style: none;
+ -fx-border-width: 1px;
+ -fx-border-color: rgb(255, 255, 255);
+ -fx-background-color: rgb(225, 215, 218);
+}

@@ -1,0 +1,49 @@
+--
+--creating schema called `memory_game`
+
+CREATE SCHEMA `memory_game` ;
+
+--
+--creating a database called `memory_game`
+--
+
+CREATE DATABASE IF NOT EXISTS `memory_game`;
+
+--
+--table structure for table `users`
+--
+
+CREATE TABLE `memory_game.users` (
+`userId` INT NOT NULL AUTO_INCREMENT,
+`username` VARCHAR(45) NOT NULL,
+`password` VARCHAR(45) NOT NULL,
+PRIMARY KEY (`userId`));
+
+--
+--table structure for table `games` and constraints for this table
+--
+
+CREATE TABLE `memory_game`.`games` (
+  `gameId` INT NOT NULL AUTO_INCREMENT,
+  `userId` INT NOT NULL,
+  `scores` INT NOT NULL,
+  `time` INT NOT NULL,
+  `date` DATETIME NOT NULL,
+  `dayOfWeek` VARCHAR(45) NOT NULL,
+  `dayOfYear` INT NOT NULL,
+  PRIMARY KEY (`gameId`),
+  INDEX `userId_idx` (`userId` ASC) VISIBLE,
+  CONSTRAINT `userId`
+    FOREIGN KEY (`userId`)
+    REFERENCES `memory_game`.`users` (`userId`)
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE);
+
+--
+--dumping data for table `users`
+--
+
+INSERT INTO `memory_game.users` (`userId`, `username`, `password`) VALUES (1, 'karolina', 'karolina');
+
+
+
